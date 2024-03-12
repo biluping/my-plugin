@@ -28,6 +28,8 @@
         <java.programPatcher implementation="org.myboy.patcher.MyProgramPatcher"/>
 
         <notificationGroup id="my-notification" displayType="STICKY_BALLOON"/>
+        
+        <toolWindow id="myToolWindows" factoryClass="org.myboy.toolwindow.MyToolWindowFactory" anchor="right"/>
     </extensions>
     
     <actions>

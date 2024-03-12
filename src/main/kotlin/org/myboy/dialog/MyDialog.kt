@@ -10,6 +10,9 @@ import javax.swing.JPanel
 /**
  * 对话框
  * https://plugins.jetbrains.com/docs/intellij/dialog-wrapper.html?from=jetbrains.org#example
+ * 1、继承 DialogWrapper，调用父类构造，传入 true
+ * 2、构造方法设置 title，调用父类 init()
+ * 3、重写 createCenterPanel 方法
  */
 class MyDialog : DialogWrapper(true) {
 

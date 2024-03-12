@@ -6,8 +6,9 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 
 /**
- * Notification 通知，这种通知需要在 plugin.xml 中增加通知组
+ * Notification 通知
  * https://plugins.jetbrains.com/docs/intellij/notifications.html
+ * plugin.xml 需要配置 extensions > notificationGroup
  */
 class NotificationAction : AnAction() {
 
