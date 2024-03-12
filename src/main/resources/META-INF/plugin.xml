@@ -39,6 +39,10 @@
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
 
+        <action class="org.myboy.action.DialogAction" id="myDialogAction" text="Dialog">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+
     </actions>
     
 </idea-plugin>
