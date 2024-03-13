@@ -3,6 +3,7 @@ package org.myboy.toolwindow
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.wm.ToolWindow
 import com.intellij.openapi.wm.ToolWindowFactory
+import com.intellij.openapi.wm.ToolWindowType
 import com.intellij.ui.content.ContentFactory
 import java.awt.FlowLayout
 import javax.swing.JButton
@@ -19,6 +20,9 @@ class MyToolWindowFactory : ToolWindowFactory {
         val panel = createPanel()
         val content = ContentFactory.getInstance().createContent(panel, "MyToolWindow", false)
         toolWindow.contentManager.addContent(content)
+
+        // 设置窗口浮动
+        toolWindow.setType(ToolWindowType.FLOATING, null)
     }
 
     private fun createPanel() : JPanel {
