@@ -48,7 +48,6 @@
         <action class="org.myboy.action.MessageAction" id="messageAction" text="Message">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
-
     </actions>
     
 </idea-plugin>
